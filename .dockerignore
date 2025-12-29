@@ -1,0 +1,22 @@
+# Exclude files/folders from Docker build context
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Local development environments
+venv/
+.venv/
+
+# Git and editor
+.git/
+.gitignore
+.vscode/
+
+# Secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

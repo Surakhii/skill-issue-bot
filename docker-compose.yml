@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  bot:
+    build:
+      context: .
+    image: skill-issue-bot:latest
+    restart: unless-stopped
+    # Use env_file to supply DISCORD_TOKEN and TENOR_KEY without baking them into the image
+    env_file:
+      - .env
+    # Uncomment to override the command
+    # command: ["python", "bot.py"]
